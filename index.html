@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CDTiempo, Tú aplicación del tiempo</title>
-  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,17 +14,52 @@
 
 <body>
 
-  <header></header>
+  <div class="navbar">
+    <a href="index.html"><img src="img/logo.png" alt="CDTiempo"></a>
+    <nav>
+      <ul>
+        <li class="nav"><a href="index.html">Tiempo Actual</a></li>
+        <li class="nav"><a href="tiempodias.html">Predicción por días</a></li>
+        <li class="nav"><a href="tiempohoras.html">Predicción 24H</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <h1 class="titulo-cabecera">Tiempo <span class="circle-sketch-highlight">Actual</span></h1>
 
   <div class="row">
     <div class="column">
       <div class="fila">
-        <section class="info"></section>
-        <section class="info"></section>
+        <section class="info">
+          <h3>Condiciones del Tiempo</h3>
+          <p class="estructura-info"><img class="icono-tiempo" src="img/dom.png" alt="CDTiempo"></a>Soleado</p>
+        </section>
+        <section class="info">
+          <h3>Temperatura</h3>
+          <p class="estructura-info"><img class="icono-tiempo" src="img/caliente.png" alt="CDTiempo"></a>18 Cº</p>
+        </section>
       </div>
       <div class="fila">
-        <section class="info"></section>
-        <section class="info"></section>
+        <section class="info">
+          <h3>Sensación térmica</h3>
+          <p class="estructura-info"><img class="icono-tiempo" src="img/frio.png" alt="CDTiempo"></a>22 Cº</p>
+        </section>
+        <section class="info">
+          <h3>Posibilidad de lluvia</h3>
+          <p class="estructura-info"><img class="icono-tiempo" src="img/lluvioso.png" alt="CDTiempo"></a>32 %</p>
+        </section>
+      </div>
+      <div class="fila">
+        <section class="info">
+          <h3>Humedad</h3>
+          <p class="estructura-info"><img class="icono-tiempo" src="img/tejido-que-absorbe-la-humedad.png"
+              alt="CDTiempo"></a>22 %</p>
+        </section>
+        <section class="info">
+          <h3>Hace un año ...</h3>
+          <p class="estructura-info"><img class="icono-tiempo" src="img/reloj.png" alt="CDTiempo"></a>18 Cº</p>
+        </section>
+
       </div>
     </div>
 
@@ -36,8 +71,6 @@
       </div>
     </div>
   </div>
-
-  <script src="js.js"></script> 
 
 </body>
 

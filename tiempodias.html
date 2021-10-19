@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CDTiempo, Tú aplicación del tiempo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="http://localhost/repositorios/Tareas-Daw-2/00-EvaluacionesIniciales/01-src/"><img src="img/logo.png"
+        alt="CDTiempo"></a>
+    <nav>
+      <ul>
+        <li class="nav"><a href="index.html">Tiempo Actual</a></li>
+        <li class="nav"><a href="tiempodias.html">Predicción por días</a></li>
+        <li class="nav"><a href="tiempohoras.html">Predicción 24H</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <h1 class="titulo-cabecera">Predicción por <span class="circle-sketch-highlight">días</span></h1>
+
+  <article class="caja-informacion-tab">
+
+    <section>
+
+      <div class="tab">
+        <button class="tablinks active" onclick="openDia(event, 'Lunes')">Lunes</button>
+        <button class="tablinks" onclick="openDia(event, 'Martes')">Martes</button>
+        <button class="tablinks" onclick="openDia(event, 'Miercoles')">Miércoles</button>
+        <button class="tablinks" onclick="openDia(event, 'Jueves')">Jueves</button>
+        <button class="tablinks" onclick="openDia(event, 'Viernes')">Viernes</button>
+        <button class="tablinks" onclick="openDia(event, 'Sabado')">Sábado</button>
+        <button class="tablinks" onclick="openDia(event, 'Domingo')">Domingo</button>
+      </div>
+
+      <div id="Lunes" class="tabcontent" style="display: block;">
+        <h3>Lunes</h3>
+        <div class="fila">
+          <section class="info">
+            <h3>Condiciones del Tiempo</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/dom.png" alt="CDTiempo"></a>Soleado</p>
+          </section>
+          <section class="info">
+            <h3>Temperatura</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/caliente.png" alt="CDTiempo"></a>18 Cº</p>
+          </section>
+        </div>
+        <div class="fila">
+          <section class="info">
+            <h3>Sensación térmica</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/frio.png" alt="CDTiempo"></a>22 Cº</p>
+          </section>
+          <section class="info">
+            <h3>Posibilidad de lluvia</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/lluvioso.png" alt="CDTiempo"></a>32 %</p>
+          </section>
+        </div>
+        <div class="fila">
+          <section class="info">
+            <h3>Humedad</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/tejido-que-absorbe-la-humedad.png"
+                alt="CDTiempo"></a>22 %</p>
+          </section>
+          <section class="info">
+            <h3>Hace un año ...</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/reloj.png" alt="CDTiempo"></a>18 Cº</p>
+          </section>
+
+        </div>
+      </div>
+
+      <div id="Martes" class="tabcontent">
+        <h3>Martes</h3>
+        <div class="fila">
+          <section class="info">
+            <h3>Condiciones del Tiempo</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/lluvioso.png" alt="CDTiempo"></a>Lluvioso</p>
+          </section>
+          <section class="info">
+            <h3>Temperatura</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/caliente.png" alt="CDTiempo"></a>18 Cº</p>
+          </section>
+        </div>
+        <div class="fila">
+          <section class="info">
+            <h3>Sensación térmica</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/frio.png" alt="CDTiempo"></a>22 Cº</p>
+          </section>
+          <section class="info">
+            <h3>Posibilidad de lluvia</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/lluvioso.png" alt="CDTiempo"></a>32 %</p>
+          </section>
+        </div>
+        <div class="fila">
+          <section class="info">
+            <h3>Humedad</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/tejido-que-absorbe-la-humedad.png"
+                alt="CDTiempo"></a>22 %</p>
+          </section>
+          <section class="info">
+            <h3>Hace un año ...</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/reloj.png" alt="CDTiempo"></a>18 Cº</p>
+          </section>
+
+        </div>
+      </div>
+
+      <div id="Miercoles" class="tabcontent">
+        <h3>Miércoles</h3>
+        <div class="fila">
+          <section class="info">
+            <h3>Condiciones del Tiempo</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/dom.png" alt="CDTiempo"></a>Soleado</p>
+          </section>
+          <section class="info">
+            <h3>Temperatura</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/caliente.png" alt="CDTiempo"></a>18 Cº</p>
+          </section>
+        </div>
+        <div class="fila">
+          <section class="info">
+            <h3>Sensación térmica</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/frio.png" alt="CDTiempo"></a>22 Cº</p>
+          </section>
+          <section class="info">
+            <h3>Posibilidad de lluvia</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/lluvioso.png" alt="CDTiempo"></a>32 %</p>
+          </section>
+        </div>
+        <div class="fila">
+          <section class="info">
+            <h3>Humedad</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/tejido-que-absorbe-la-humedad.png"
+                alt="CDTiempo"></a>22 %</p>
+          </section>
+          <section class="info">
+            <h3>Hace un año ...</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/reloj.png" alt="CDTiempo"></a>18 Cº</p>
+          </section>
+
+        </div>
+      </div>
+
+      <div id="Jueves" class="tabcontent">
+        <h3>Jueves</h3>
+        <div class="fila">
+          <section class="info">
+            <h3>Condiciones del Tiempo</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/dom.png" alt="CDTiempo"></a>Soleado</p>
+          </section>
+          <section class="info">
+            <h3>Temperatura</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/caliente.png" alt="CDTiempo"></a>18 Cº</p>
+          </section>
+        </div>
+        <div class="fila">
+          <section class="info">
+            <h3>Sensación térmica</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/frio.png" alt="CDTiempo"></a>22 Cº</p>
+          </section>
+          <section class="info">
+            <h3>Posibilidad de lluvia</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/lluvioso.png" alt="CDTiempo"></a>32 %</p>
+          </section>
+        </div>
+        <div class="fila">
+          <section class="info">
+            <h3>Humedad</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/tejido-que-absorbe-la-humedad.png"
+                alt="CDTiempo"></a>22 %</p>
+          </section>
+          <section class="info">
+            <h3>Hace un año ...</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/reloj.png" alt="CDTiempo"></a>18 Cº</p>
+          </section>
+
+        </div>
+      </div>
+
+      <div id="Viernes" class="tabcontent">
+        <h3>Viernes</h3>
+        <div class="fila">
+          <section class="info">
+            <h3>Condiciones del Tiempo</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/dom.png" alt="CDTiempo"></a>Soleado</p>
+          </section>
+          <section class="info">
+            <h3>Temperatura</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/caliente.png" alt="CDTiempo"></a>18 Cº</p>
+          </section>
+        </div>
+        <div class="fila">
+          <section class="info">
+            <h3>Sensación térmica</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/frio.png" alt="CDTiempo"></a>22 Cº</p>
+          </section>
+          <section class="info">
+            <h3>Posibilidad de lluvia</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/lluvioso.png" alt="CDTiempo"></a>32 %</p>
+          </section>
+        </div>
+        <div class="fila">
+          <section class="info">
+            <h3>Humedad</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/tejido-que-absorbe-la-humedad.png"
+                alt="CDTiempo"></a>22 %</p>
+          </section>
+          <section class="info">
+            <h3>Hace un año ...</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/reloj.png" alt="CDTiempo"></a>18 Cº</p>
+          </section>
+
+        </div>
+      </div>
+
+      <div id="Sabado" class="tabcontent">
+        <h3>Sábado</h3>
+        <div class="fila">
+          <section class="info">
+            <h3>Condiciones del Tiempo</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/dom.png" alt="CDTiempo"></a>Soleado</p>
+          </section>
+          <section class="info">
+            <h3>Temperatura</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/caliente.png" alt="CDTiempo"></a>18 Cº</p>
+          </section>
+        </div>
+        <div class="fila">
+          <section class="info">
+            <h3>Sensación térmica</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/frio.png" alt="CDTiempo"></a>22 Cº</p>
+          </section>
+          <section class="info">
+            <h3>Posibilidad de lluvia</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/lluvioso.png" alt="CDTiempo"></a>32 %</p>
+          </section>
+        </div>
+        <div class="fila">
+          <section class="info">
+            <h3>Humedad</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/tejido-que-absorbe-la-humedad.png"
+                alt="CDTiempo"></a>22 %</p>
+          </section>
+          <section class="info">
+            <h3>Hace un año ...</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/reloj.png" alt="CDTiempo"></a>18 Cº</p>
+          </section>
+
+        </div>
+      </div>
+
+      <div id="Domingo" class="tabcontent">
+        <h3>Domingo</h3>
+        <div class="fila">
+          <section class="info">
+            <h3>Condiciones del Tiempo</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/dom.png" alt="CDTiempo"></a>Soleado</p>
+          </section>
+          <section class="info">
+            <h3>Temperatura</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/caliente.png" alt="CDTiempo"></a>18 Cº</p>
+          </section>
+        </div>
+        <div class="fila">
+          <section class="info">
+            <h3>Sensación térmica</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/frio.png" alt="CDTiempo"></a>22 Cº</p>
+          </section>
+          <section class="info">
+            <h3>Posibilidad de lluvia</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/lluvioso.png" alt="CDTiempo"></a>32 %</p>
+          </section>
+        </div>
+        <div class="fila">
+          <section class="info">
+            <h3>Humedad</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/tejido-que-absorbe-la-humedad.png"
+                alt="CDTiempo"></a>22 %</p>
+          </section>
+          <section class="info">
+            <h3>Hace un año ...</h3>
+            <p class="estructura-info"><img class="icono-tiempo" src="img/reloj.png" alt="CDTiempo"></a>18 Cº</p>
+          </section>
+
+        </div>
+      </div>
+
+    </section>
+
+  </article>
+  <script src="js/js.js"></script>
+</body>
+
+</html>
